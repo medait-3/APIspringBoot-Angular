@@ -13,7 +13,6 @@ import java.util.List;
 public class EmployeeResource {
     private final EmployeeService employeeService;
 
-
     public EmployeeResource(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
@@ -47,5 +46,4 @@ public class EmployeeResource {
         employeeService.deleteEmployee(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
 }
